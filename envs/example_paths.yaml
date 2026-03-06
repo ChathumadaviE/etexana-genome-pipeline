@@ -1,0 +1,24 @@
+# Example configuration for etexana-genome-pipeline
+
+project_id: etexana_zz
+outdir: /path/to/output
+
+inputs:
+  hifi_reads: /path/to/ZZ_HiFi_reads.fastq.gz
+  rnaseq_reads:
+    - /path/to/RNAseq_rep1_R1.fastq.gz
+    - /path/to/RNAseq_rep1_R2.fastq.gz
+  ww_reference: /path/to/WW_reference_genome.fasta
+  vgp_purged_contigs: /path/to/ZZ_purged_contigs_from_Galaxy.fasta
+
+genomescope:
+  kmer_size: 21
+  ploidy: 2
+  jellyfish_memory: 1G
+  threads: 10
+
+busco:
+  lineage: arthropoda_odb10
+
+repeatmasker:
+  species: "eulimnadia texana"    # or "arthropoda"
