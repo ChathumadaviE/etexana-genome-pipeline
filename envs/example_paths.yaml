@@ -60,4 +60,11 @@ blobtoolkit_ww:
   gc_max: 0.45
   arthropoda_key: "Arthropoda"
 
+gapcloser:
+  ww_clean_fasta: /path/to/ww_reference_clean/clean_ww_assembly.fasta
+  zz_clean_reads_fasta: /path/to/minimap2_clean_reads/ZZ_cleanreads.fastq  # or .fasta
+  threads: 32
+  tgstype: pb
+  minmap_arg: "-x asm20"
+
 
