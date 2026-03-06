@@ -34,3 +34,13 @@ minimap2:
   clean_contigs_fasta: /path/to/clean_contigs.fasta   # output from BlobToolKit step
   threads: 16
   preset: map-hifi     # good default for PacBio HiFi reads
+
+busco:
+  lineage: arthropoda_odb10
+
+qc:
+  assembly_fasta: /path/to/ZZ_final_assembly.fasta
+  busco_mode: genome        # typical for assemblies
+  threads: 16
+  # Optional reference genome for QUAST (e.g. WW assembly); leave empty for none
+  reference_for_quast: ""   # or /path/to/WW_reference_genome.fasta
