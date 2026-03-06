@@ -65,3 +65,38 @@ Next steps include:
 Adding a small test dataset and example configuration.
 
 Wrapping the pipeline in a workflow manager (e.g. Nextflow) for fully automated, portable execution.
+
+### GenomeScope 2.0 installation
+
+The k‑mer histogram produced by `01_kmer_jellyfish.sh` is analyzed with GenomeScope 2.0 on the command line.
+
+1. Install R packages (inside the `etexana-genome` conda environment):
+
+```bash
+mamba install -c conda-forge r-base r-yaml r-argparse r-minpack.lm
+```
+
+2. Install GenomeScope 2.0:
+```
+git clone https://github.com/tbenavi1/genomescope2.0.git
+cd genomescope2.0
+Rscript install.R
+```
+
+This installs the genomescope2 R package and a genomescope.R wrapper script into your R library path.
+
+3. Confirm installation:
+```
+Rscript -e "library(genomescope2); packageVersion('genomescope2')"
+```
+
+If this succeeds, you can run the pipeline step:
+```
+Rscript bin/02_genomescope2.R config/example_paths.yaml
+```
+
+
+You can adjust the exact commands later if your environment uses `conda` instead of `mamba`.
+
+
+
