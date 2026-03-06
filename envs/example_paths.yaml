@@ -30,3 +30,7 @@ blobtoolkit:
   gc_max: 0.45
   arthropoda_key: "Arthropoda"
 
+minimap2:
+  clean_contigs_fasta: /path/to/clean_contigs.fasta   # output from BlobToolKit step
+  threads: 16
+  preset: map-hifi     # good default for PacBio HiFi reads
