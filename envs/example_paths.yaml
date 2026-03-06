@@ -67,4 +67,8 @@ gapcloser:
   tgstype: pb
   minmap_arg: "-x asm20"
 
+ragtag:
+  gapfilled_reference: /path/to/gapcloser/gap_filled_Etexana.scaffolds.fa
+  zz_contigs_fasta: /path/to/ZZ_contigs.fasta
+  threads: 32
 
