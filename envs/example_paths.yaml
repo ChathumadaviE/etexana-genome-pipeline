@@ -83,3 +83,9 @@ repeatmodeler:
   assembly_fasta: /path/to/ragtag_scaffold/ragtag.scaffold.fasta
   db_name: etexana_zz_rmdb
   threads: 32
+
+repeatmasker:
+  assembly_fasta: /path/to/ragtag_scaffold/ragtag.scaffold.fasta
+  custom_lib: /path/to/repeatmodeler/etexana_zz_rmdb-families.fa
+  species: "eulimnadia texana"
+  threads: 16
