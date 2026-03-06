@@ -78,3 +78,8 @@ dotplotly:
   threads: 16
   repo_path: /path/to/your/dotPlotly_repo
   plot_prefix: etexana_WW_vs_ZZ
+
+repeatmodeler:
+  assembly_fasta: /path/to/ragtag_scaffold/ragtag.scaffold.fasta
+  db_name: etexana_zz_rmdb
+  threads: 32
