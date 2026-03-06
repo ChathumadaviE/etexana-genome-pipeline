@@ -22,3 +22,11 @@ busco:
 
 repeatmasker:
   species: "eulimnadia texana"    # or "arthropoda"
+
+blobtoolkit:
+  prelim_blobdir: /path/to/preliminary/blobdir          # BlobDir for initial contigs
+  prelim_assembly_fasta: /path/to/preliminary_contigs.fasta
+  gc_min: 0.30
+  gc_max: 0.45
+  arthropoda_key: "Arthropoda"
+
