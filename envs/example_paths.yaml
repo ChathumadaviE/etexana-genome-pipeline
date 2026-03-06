@@ -44,3 +44,10 @@ qc:
   threads: 16
   # Optional reference genome for QUAST (e.g. WW assembly); leave empty for none
   reference_for_quast: ""   # or /path/to/WW_reference_genome.fasta
+
+vgp:
+  galaxy_history_url: "https://usegalaxy.org/u/<user>/h/<history-id>"
+  hifiasm_version: "0.16.1+galaxy4"
+  vgp_pipeline_version: "VGP pipeline (Galaxy)"
+  purged_contigs_fasta: /path/to/ZZ_purged_contigs_from_Galaxy.fasta
+
