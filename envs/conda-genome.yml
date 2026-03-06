@@ -1,0 +1,40 @@
+name: etexana-genome
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - mamba                   # optional but recommended
+  - python=3.11
+  - perl
+  - samtools
+  - bedtools
+
+  # K-mer and mapping
+  - jellyfish=2.2.7
+  - minimap2=2.14           # or nearest available build on Bioconda[web:23][web:29]
+
+  # Gap closing
+  - tgsgapcloser=1.2.1      # from Bioconda[web:27][web:30]
+
+  # Scaffolding / reference-guided
+  - ragtag=2.1.0
+
+  # Repeat analysis
+  - repeatmodeler=2.0.5
+  - repeatmasker=4.2.1
+
+  # Transcriptome
+  - trinity=2.15.1
+
+  # QC / contamination (local, if desired)
+  - busco=5.3.2             # optional: Galaxy used for paper
+  - quast=5.2.0             # optional
+  - blobtoolkit             # pin version after testing on Rocky
+
+  # R for GenomeScope2
+  - r-base
+  - r-ggplot2
+  - r-optparse
+  # genomescope2 will be installed from GitHub inside this env
