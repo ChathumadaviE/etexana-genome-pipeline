@@ -72,3 +72,9 @@ ragtag:
   zz_contigs_fasta: /path/to/ZZ_contigs.fasta
   threads: 32
 
+dotplotly:
+  reference_fasta: /path/to/gapcloser/gap_filled_Etexana.scaffolds.fa
+  query_fasta: /path/to/ragtag_scaffold/ragtag.scaffold.fasta
+  threads: 16
+  repo_path: /path/to/your/dotPlotly_repo
+  plot_prefix: etexana_WW_vs_ZZ
