@@ -63,7 +63,12 @@ echo "Generating k-mer histogram..."
 jellyfish histo \
   -t "${THREADS}" \
   reads.jf > reads.histo
+  
 
 echo "Done. Files created:"
+
+#Make it executable (locally or via terminal on HPC):
+#chmod +x bin/01_kmer_jellyfish.sh
+
 echo "  ${OUTDIR}/kmer/reads.jf"
 echo "  ${OUTDIR}/kmer/reads.histo"
