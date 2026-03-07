@@ -89,3 +89,13 @@ repeatmasker:
   custom_lib: /path/to/repeatmodeler/etexana_zz_rmdb-families.fa
   species: "eulimnadia texana"
   threads: 16
+
+maker_round1:
+  genome_fasta: /path/to/repeatmasker/ragtag.scaffold.fasta.masked
+  repeat_gff3: /path/to/repeatmasker/ragtag.scaffold.fasta.out.gff
+  transcript_fasta: /path/to/trinity/Trinity.fasta
+  protein_fasta: /path/to/daphnia_magna_proteome.fasta
+  maker_opts_template: /path/to/maker_opts_round1.ctl
+  maker_bopts: /path/to/maker_bopts.ctl
+  maker_exepts: /path/to/maker_exe.ctl
+  threads: 32
