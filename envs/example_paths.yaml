@@ -99,3 +99,14 @@ maker_round1:
   maker_bopts: /path/to/maker_bopts.ctl
   maker_exepts: /path/to/maker_exe.ctl
   threads: 32
+
+snap_augustus:
+  galaxy_history_url: "https://usegalaxy.org/u/<user>/h/<history-id>"
+  snap_version: "SNAP 2013_11_29 (Galaxy)"
+  augustus_version: "AUGUSTUS 3.4.0 (Galaxy)"
+  maker_round2_gff3: /path/to/ZZ_maker_round2.gff3
+  maker_round3_gff3: /path/to/ZZ_maker_round3.gff3
+  snap_hmm: /path/to/ZZ_snap.hmm
+  augustus_species_dir: /path/to/augustus/species/etexana
+  stats_round2: /path/to/ZZ_maker_round2_stats.txt
+  stats_round3: /path/to/ZZ_maker_round3_stats.txt
